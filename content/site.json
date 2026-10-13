@@ -1,0 +1,47 @@
+{
+  "_comment": "Configuración global del sitio. Los TEXTOS de cada idioma están en content/es.json, content/en.json y content/de.json.",
+
+  "brand": "Tradissea",
+  "domain": "https://tradissea.com",
+
+  "contact": {
+    "email": "paula@tradissea.com",
+    "phone": "+34 695 74 84 45",
+    "phoneLink": "+34695748445",
+    "whatsapp": "https://wa.me/34695748445",
+    "linkedin": "https://www.linkedin.com/in/paula-barbero-urdiales/"
+  },
+
+  "discount": {
+    "_comment": "Juego «La palabra del día» de la página de descuentos. «percent» es el descuento que se lleva quien acierta: aparece en los textos (donde pone {percent}) y dentro del código que genera el juego. «prefix» son las letras con las que empieza ese código. Pon \"enabled\": false para retirar la página.",
+    "enabled": true,
+    "percent": 10,
+    "prefix": "TRAD"
+  },
+
+  "announcement": {
+    "_comment": "Banner con texto en movimiento en lo alto de la web. Pon \"enabled\": false para quitarlo (o cambia el texto en es.json, en.json y de.json → announcement.text).",
+    "enabled": true
+  },
+
+  "video": {
+    "_comment": "ID del vídeo de YouTube que se muestra en la portada. Déjalo vacío (\"\") para ocultar la sección.",
+    "youtubeId": "EFWKsBNPzo0"
+  },
+
+  "form": {
+    "_comment": "Endpoint del formulario de contacto. Si lo dejas vacío, el formulario abre el correo del visitante con el mensaje ya escrito. Para recibir los mensajes por email crea un formulario gratis en https://formspree.io y pega aquí la URL (ej. https://formspree.io/f/xxxxxxx).",
+    "endpoint": ""
+  },
+
+  "languages": ["es", "en", "de"],
+  "defaultLanguage": "es",
+
+  "_clientsComment": "Logotipos de la franja «quiénes han confiado en nosotros» y puntos del mapa. «scale» ajusta el tamaño de cada logo para que todos se vean equilibrados (1 = tamaño base). «city», «lat» y «lon» colocan el punto en el mapamundi y pintan su país en amarillo: las coordenadas se sacan de Google Maps (clic derecho sobre el lugar → el primer número es lat y el segundo lon). «label» decide dónde va el cartelito: top, bottom, left o right.",
+  "clients": [
+    { "name": "Canva", "logo": "client-canva.png", "scale": 1, "city": "Sídney", "lat": -33.87, "lon": 151.21, "label": "bottom" },
+    { "name": "DeepL", "logo": "client-deepl.png", "scale": 1.7, "city": "Colonia", "lat": 50.94, "lon": 6.96, "label": "right" },
+    { "name": "Talgo", "logo": "client-talgo.png", "scale": 1.5, "city": "Madrid", "lat": 40.42, "lon": -3.7, "label": "left" },
+    { "name": "Lionbridge", "logo": "client-lionbridge.png", "scale": 0.8, "city": "Boston", "lat": 42.38, "lon": -71.24, "label": "top" }
+  ]
+}
